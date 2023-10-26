@@ -1,7 +1,7 @@
 import React from "react";
 
 const Port = () => {
-    return <div>Port</div>;
+    return <div role="contentinfo">Port</div>;
 };
 
 export default Port;

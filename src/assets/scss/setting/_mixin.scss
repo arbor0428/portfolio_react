@@ -1,0 +1,19 @@
+@mixin oceanwrap {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    z-index: 33;
+}
+
+@mixin ocean {
+    position: relative;
+    width: 100vw;
+    z-index: 20;
+}
+
+@mixin wave {
+    width: 6400px;
+    height: 198px;
+    animation: wave 6s linear 0s infinite;
+    transform: translate3d(0, 0, 0);
+}

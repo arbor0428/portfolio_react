@@ -1,0 +1,30 @@
+.progress {
+    background: #061028;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 5000;
+}
+
+.progress-bar {
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    width: 0%;
+}
+
+.progress-text {
+    font: 14px;
+    margin-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.progress-complete .progress-bar {
+    border-top-color: rgb(255, 255, 255);
+}
