@@ -1,0 +1,294 @@
+#port {
+    position: relative;
+    padding-bottom: 100px;
+    background-color: #061028;
+    color: #fff;
+
+    .ocean__wrap {
+        @include oceanwrap;
+
+        .ocean {
+            @include ocean;
+            background-color: var(--mainBg);
+
+            @keyframes wave {
+                0% {
+                    margin-left: 0;
+                }
+
+                100% {
+                    margin-left: -1600px;
+                }
+            }
+
+            .wave {
+                @include wave;
+                background: url('../../img/wave01.svg') repeat-x;
+            }
+        }
+    }
+
+    .port__inner {
+        width: 84%;
+        margin: 0 auto;
+        padding-bottom: 108px;
+
+        @media (max-width: 1024px) {
+            padding-top: 100px;
+        }
+
+        @media (max-width: 600px) {
+            width: 90%;
+        }
+
+        .infobox__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 1325px) {
+                display: block;
+            }
+
+            .left__info {
+                width: 30%;
+                margin-left: 8%;
+                font-size: 15px;
+
+                @media (max-width: 1325px) {
+                    width: 100%;
+                    margin-left: 0;
+                }
+
+                h3 {
+                    @media (max-width: 600px) {
+                        font-size: 28px;
+                        text-align: center;
+                    }
+                }
+
+                .profile__wrap {
+                    @media (max-width: 1325px) {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+
+                    @media (max-width: 600px) {
+                        display: block;
+                    }
+
+                    .profilepic {
+                        margin-top: 42px;
+
+                        @media (max-width: 600px) {
+                            margin-top: 30px;
+                            text-align: center;
+                        }
+
+                        img {
+                            width: 56%;
+
+                            @media (max-width: 1325px) {
+                                width: 300px;
+                            }
+
+                            @media (max-width: 600px) {
+                                width: 90%;
+                            }
+                        }
+                    }
+
+                    .profilebox {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 30px;
+
+                        @media (max-width: 1325px) {
+                            margin-left: 30px;
+                        }
+
+                        @media (max-width: 600px) {
+                            margin-left: 0;
+                            display: block;
+                        }
+
+                        .title {
+                            @media (max-width: 600px) {
+                                display: flex;
+                                justify-content: center;
+                            }
+
+                            li {
+                                margin: 15px 0;
+                                letter-spacing: 2px;
+
+                                &:first-child {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                }
+
+                                &:last-child {
+                                    font-family: "Montserrat";
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .line {
+                            width: 2px;
+                            height: 78px;
+                            margin: 0 26px;
+                            background-color: var(--yellow);
+
+                            @media (max-width: 600px) {
+                                margin: 10px auto;
+                                width: 60px;
+                                height: 2px;
+                            }
+
+                            &:first-child {
+                                @media (max-width: 600px) {
+                                    margin-right: 15px;
+                                    font-size: 20px;
+                                }
+                            }
+
+                            &:last-child {
+                                @media (max-width: 600px) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .content li {
+                            margin: 10px 0;
+                            font-weight: 400;
+                            font-size: 14px;
+
+                            @media (max-width: 600px) {
+                                text-align: center;
+                            }
+
+                            a {
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            .right__info {
+                margin-top: 45px;
+                width: 62%;
+                font-size: 15px;
+
+                @media (max-width: 1325px) {
+                    margin-top: 80px;
+                    width: 100%;
+                }
+
+                .infobox {
+                    margin-bottom: 30px;
+
+                    @media (max-width: 1024px) {
+                        margin: 30px;
+                    }
+
+                    @media (max-width: 600px) {
+                        margin: 30px 0 0 10px;
+                    }
+
+                    .right__tit {
+                        position: relative;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #fff;
+                        letter-spacing: 3px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -10px;
+                            left: -11px;
+                            width: 10px;
+                            height: 10px;
+                            background-color: var(--yellow);
+                        }
+
+                        span {
+                            display: block;
+                            margin-top: 10px;
+                            font-size: 14px;
+                            font-family: "Montserrat";
+                            font-weight: 400;
+                            color: var(--yellow);
+                        }
+                    }
+
+                    .tool__list {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 20px;
+                            width: 55px;
+                            height: 55px;
+                            border-radius: 5px;
+                            background-color: rgba(228, 228, 228, 1);
+                            overflow: hidden;
+
+                            @media (max-width: 960px) {
+                                margin-right: 10px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .introducebox {
+
+                    p {
+                        line-height: 1.5;
+                        font-size: 16px;
+                    }
+                }
+
+                .threebox__wrap {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media (max-width: 1024px) {
+                        flex-wrap: wrap;
+                        justify-content: normal;
+                    }
+
+                    .infobox__bot {
+                        display: flex;
+
+                        .title {
+                            margin-right: 30px;
+
+                            li {
+                                margin: 14px 0;
+                            }
+                        }
+
+                        .content li {
+                            margin: 14px 0;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}
