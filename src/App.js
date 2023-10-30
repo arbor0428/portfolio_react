@@ -1,15 +1,23 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import React, { useEffect } from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import HomeView from "./views/HomeView";
+import smooth from "./utils/smooth";
+import link from "./utils/link";
 
 const App = () => {
+    useEffect(() => {
+        smooth();
+        link();
+        window.scrollTo(0, 0);
+    }, []);
+
+
     return (
-    <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomeView />} />
-        </Routes>
-    </BrowserRouter>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomeView />} />
+            </Routes>
+        </BrowserRouter>
     );
 };
 

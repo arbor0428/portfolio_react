@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import imagesLoaded from "imagesloaded";
 
 const Skip = () => {
+
   const [current, setCurrent] = useState(0);
   const [loading, setLoading] = useState(true);
 
