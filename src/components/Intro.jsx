@@ -4,10 +4,11 @@ import { animateScroll as scroll } from 'react-scroll';
 const Intro = () => {
     const [displayedText, setDisplayedText] = useState('');
     const content = "Problem Solver\nHana Park.";
-
+    let i = 0;
+    
     useEffect(() => {
         const intervalId = setInterval(() => {
-            let i = 0;
+
             let txt = content[i++];
             setDisplayedText(prevText => prevText + (txt === "\n" ? "\n" : txt));
             if (i >= content.length) {
