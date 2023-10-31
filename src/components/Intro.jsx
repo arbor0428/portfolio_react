@@ -4,7 +4,8 @@ import { animateScroll as scroll } from 'react-scroll';
 const Intro = () => {
     const [content, setContent] = useState("Problem Solver\nHana Park.");
     const [displayedText, setDisplayedText] = useState('');
-    let i = 0;
+    const i = useRef(0); // useRef를 사용하여 변경 가능한 변수 i를 만듭니다.
+
 
     // useRef Hook을 사용하여 intervalId를 저장합니다.
     const intervalId = useRef(null);
@@ -30,11 +31,6 @@ const Intro = () => {
         duration: 1000,
         smooth: 'easeInOutQuart',
         });
-    };
-
-    // setContent 함수를 사용하여 content 상태를 업데이트하는 예시
-    const updateContent = () => {
-        setContent("New Content");
     };
 
     return (
