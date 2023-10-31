@@ -3,59 +3,53 @@ import { animateScroll as scroll } from 'react-scroll';
 
 const Intro = () => {
     const [displayedText, setDisplayedText] = useState('');
-    let i = 0;
     const content = "Problem Solver\nHana Park.";
 
-    // useRef Hook을 사용하여 intervalId를 저장합니다.
-    const intervalId = useRef(null);
-
     useEffect(() => {
-
-        // useRef로부터 intervalId 값을 참조합니다.
-        intervalId.current = setInterval(() => {
-        let txt = content[i++];
-        setDisplayedText(prevText => prevText + (txt === "\n" ? "\n" : txt));
-        if (i >= content.length) {
-            clearInterval(intervalId.current);
-        }
+        const intervalId = setInterval(() => {
+            let i = 0;
+            let txt = content[i++];
+            setDisplayedText(prevText => prevText + (txt === "\n" ? "\n" : txt));
+            if (i >= content.length) {
+                clearInterval(intervalId);
+            }
         }, 200);
 
         return () => {
-        // 컴포넌트가 언마운트되거나 업데이트될 때 clearInterval을 호출합니다.
-        clearInterval(intervalId.current);
+            clearInterval(intervalId);
         };
     }, [content]);
 
     const handleScroll = () => {
         scroll.scrollTo(window.innerHeight, {
-        duration: 1000,
-        smooth: 'easeInOutQuart',
+            duration: 1000,
+            smooth: 'easeInOutQuart',
         });
     };
 
     return (
         <section id="intro">
-        <div className="intro__center">
-            <div className="intro__text">
-            <span className="text">{displayedText}</span>
-            <span className="blink">|</span>
+            <div className="intro__center">
+                <div className="intro__text">
+                    <span className="text">{displayedText}</span>
+                    <span className="blink">|</span>
+                </div>
+                <p className="info phone">contact me. 010-5220-2107</p>
+                <a
+                    href="https://github.com/arbor0428"
+                    className="info mail"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    https://github.com/arbor0428
+                </a>
+                <div className="scrolldown" onClick={handleScroll}>
+                    <p>scrolldown</p>
+                    <div className="tri"></div>
+                </div>
             </div>
-            <p className="info phone">contact me. 010-5220-2107</p>
-            <a
-            href="https://github.com/arbor0428"
-            className="info mail"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            https://github.com/arbor0428
-            </a>
-            <div className="scrolldown" onClick={handleScroll}>
-            <p>scrolldown</p>
-            <div className="tri"></div>
-            </div>
-        </div>
         </section>
     );
-    };
+};
 
 export default Intro;
