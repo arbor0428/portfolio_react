@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Intro = () => {
     const [displayedText, setDisplayedText] = useState('');
     const content = "Problem Solver\nHana Park.";
-    let i = 0;
-    
+    const i = useRef(0); // useRef를 사용하여 i 변수를 레퍼런스로 선언
+
     useEffect(() => {
         const intervalId = setInterval(() => {
-
-            let txt = content[i++];
+            let txt = content[i.current++];
             setDisplayedText(prevText => prevText + (txt === "\n" ? "\n" : txt));
-            if (i >= content.length) {
+            if (i.current >= content.length) {
                 clearInterval(intervalId);
             }
         }, 200);
 
         return () => {
-            clearInterval(intervalId);
+            clearInterval(intervalId); // 컴포넌트가 언마운트될 때 인터벌을 정리
         };
-    }, [content]);
+    }, [content]); // content를 의존성 배열에 추가
 
     const handleScroll = () => {
         scroll.scrollTo(window.innerHeight, {
