@@ -36,7 +36,7 @@ const Intro = () => {
                     <span className="blink">|</span>
                 </div>
                 <p className="info phone">contact me. 010-5220-2107</p>
-                <a href="https://github.com/whynot1217" className="info mail" target="_blank">https://github.com/arbor0428</a>
+                <a href="https://github.com/whynot1217" className="info mail" target="_blank" rel="noopener noreferrer">https://github.com/arbor0428</a>
                 <Link to="port" smooth={true} duration={1000} className="scrolldown" onClick={handleScroll}>
                     <p>scrolldown</p>
                     <div className="tri"></div>

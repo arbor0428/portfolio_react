@@ -22,8 +22,8 @@ const Practice = () => {
                             </div>
                             <h3 className="title">{practice.title}</h3>
                             <div className="btn">
-                                <a href={practice.code} target="_blank">code</a>
-                                <a href={practice.view} target="_blank">view</a>
+                                <a href={practice.code} target="_blank" rel="noopener noreferrer">code</a>
+                                <a href={practice.view} target="_blank" rel="noopener noreferrer">view</a>
                             </div>
                             <div className="info">
                                 <span>{practice.info[0]}</span>

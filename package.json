@@ -40,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/arbor0428/portfolio_react.git",
+  "author": "Hannah <hannah1155@naver.com>",
+  "license": "MIT"
 }

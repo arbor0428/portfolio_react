@@ -13,7 +13,7 @@ class Topbtn extends React.Component {
     render() {
         return (
             <button className="topBtn" onClick={this.scrollToTop}>
-                <img src={topbtn} />
+                <img src={topbtn} alt="top" />
             </button>
         );
     }
