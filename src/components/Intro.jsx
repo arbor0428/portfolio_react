@@ -2,15 +2,15 @@ import React, { useState, useEffect, useRef } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Intro = () => {
-    const [content, setContent] = useState("Problem Solver\nHana Park.");
     const [displayedText, setDisplayedText] = useState('');
-    const i = useRef(0); // useRef를 사용하여 변경 가능한 변수 i를 만듭니다.
-
+    let i = 0;
+    const content = "Problem Solver\nHana Park.";
 
     // useRef Hook을 사용하여 intervalId를 저장합니다.
     const intervalId = useRef(null);
 
     useEffect(() => {
+
         // useRef로부터 intervalId 값을 참조합니다.
         intervalId.current = setInterval(() => {
         let txt = content[i++];
