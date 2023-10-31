@@ -7,10 +7,12 @@ import Port from "../components/Port";
 import Footer from "../components/Footer";
 import Main from "../components/Main";
 import Topbtn from '../components/Topbtn';
+import Skip from '../components/Skip';
 
 const HomeView = () => {
     return (
     <>
+        <Skip />
         <Header />
         <Main>
             <Intro />
