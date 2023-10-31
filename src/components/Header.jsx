@@ -12,7 +12,7 @@ const Header = () => {
                 <nav className="header__nav" role="navigation" aria-label="메인메뉴">
                     <ul>
                         <li>
-                            <a href="#aboutme">About me</a>
+                            <a href="#port">About me</a>
                         </li>
                         <li>
                             <a href="#site">Works</a>

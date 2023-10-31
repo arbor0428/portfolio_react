@@ -226,3 +226,48 @@ export const siteText = [
         view: "https://www.togethertoo.co.kr/",
     },
 ];
+
+
+
+export const practiceText = [
+    {
+        title: "리액트를 이용한 사이트 제작",
+        code: "https://github.com/arbor0428/react_clone01",
+        view: "https://gilded-capybara-02bdcb.netlify.app/",
+        info: [
+            "site coding",
+            "production period : 7 days",
+            "use stack : use stack : html5/css3, CSS Variable, react.js",
+        ],
+    },
+    {
+        title: "리액트를 이용한 투두리스트",
+        code: "https://github.com/arbor0428/todo-list",
+        view: "https://sage-belekoy-3f0d37.netlify.app/",
+        info: [
+            "site coding",
+            "production period : 14 days",
+            "use stack : html5/css3, CSS Variable, react.js",
+        ],
+    },
+    {
+        title: "youtube API를 활용한 프로젝트",
+        code: "https://github.com/arbor0428/react_youtube",
+        view: "https://master--flourishing-lebkuchen-fcb261.netlify.app/",
+        info: [
+            "site coding",
+            "production period : 20 days",
+            "use stack : html5/css3, CSS Variable, react.js",
+        ],
+    },
+    {
+        title: "리액트를 이용한 쇼핑몰 제작",
+        code: "https://github.com/arbor0428/shoppy",
+        view: "https://resilient-selkie-38c036.netlify.app/",
+        info: [
+            "site coding",
+            "production period : 25 days",
+            "use stack : html5/css3, CSS Variable, react.js",
+        ],
+    },
+];

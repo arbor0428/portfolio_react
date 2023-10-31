@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Intro = () => {
     //typing
@@ -19,6 +20,14 @@ const Intro = () => {
         return () => clearInterval(intervalId);
     }, [content]);
 
+    const handleScroll = () => {
+        const targetElement = document.getElementById('port');
+        scroll.scrollTo(targetElement.offsetTop, {
+            duration: 1000,
+            smooth: 'easeInOutQuart',
+        });
+    };
+
     return (
         <section id="intro">
             <div className="intro__center">
@@ -28,12 +37,10 @@ const Intro = () => {
                 </div>
                 <p className="info phone">contact me. 010-5220-2107</p>
                 <a href="https://github.com/whynot1217" className="info mail" target="_blank">https://github.com/arbor0428</a>
-                <div className="scrolldown">
-                    <a href="#" title="scrolldown">
-                        <p>scrolldown</p>
-                        <div className="tri"></div>
-                    </a>
-                </div>
+                <Link to="port" smooth={true} duration={1000} className="scrolldown" onClick={handleScroll}>
+                    <p>scrolldown</p>
+                    <div className="tri"></div>
+                </Link>
             </div>
         </section>
     );

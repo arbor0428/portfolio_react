@@ -5,13 +5,12 @@ import Practice from "../components/Practice";
 import Site from "../components/Site";
 import Port from "../components/Port";
 import Footer from "../components/Footer";
-import Skip from "../components/Skip";
 import Main from "../components/Main";
+import Topbtn from '../components/Topbtn';
 
 const HomeView = () => {
     return (
     <>
-        <Skip />
         <Header />
         <Main>
             <Intro />
@@ -19,6 +18,7 @@ const HomeView = () => {
             <Site />
             <Practice />
         </Main>
+        <Topbtn />
         <Footer />
     </>
     );

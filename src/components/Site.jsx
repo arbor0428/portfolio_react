@@ -9,30 +9,33 @@ const Site = () => {
     const horizontalRef = useRef(null);
     const sectionRef = useRef([]);
 
-        useEffect(() => {
-            if (window.innerWidth >= 960) {
-                gsap.registerPlugin(ScrollTrigger);
-
-                const horizontal = horizontalRef.current;
-                const sections = sectionRef.current;
-
-                let scrollTween = gsap.to(sections, {
-                    xPercent: -120 * (sections.length - 1),
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: horizontal,
-                        start: "-100px 56px",
-                        end: () => "+=" + horizontal.offsetWidth,
-                        pin: true,
-                        scrub: 1,
-                        markers: false,
-                        invalidateOnRefresh: true,
-                        anticipatePin: 1,
-                    }
-                })
-
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+    
+        // 페이지 로딩이 완료된 후에 스크롤을 상단으로 이동시킵니다.
+        //window.scrollTo(0, 0);
+    
+        if (window.innerWidth >= 960) {
+            const horizontal = horizontalRef.current;
+            const sections = sectionRef.current;
+    
+            let scrollTween = gsap.to(sections, {
+                xPercent: -120 * (sections.length - 1),
+                ease: "none",
+                scrollTrigger: {
+                    trigger: horizontal,
+                    start: "-50px 100px",
+                    end: () => "+=" + horizontal.offsetWidth,
+                    pin: true,
+                    scrub: 1,
+                    markers: false,
+                    invalidateOnRefresh: true,
+                    anticipatePin: 1,
+                }
+            });
+    
             return () => {
-                scrollTween.kill();
+                scrollTween.kill(); // ScrollTrigger 설정 제거
             };
         }
     }, []);
@@ -45,9 +48,9 @@ const Site = () => {
                     <div className="wave"></div>
                 </div>
             </div>
-            <div class="title">
+            <div className="title">
                 <h3>CONTENTS</h3>
-                <div class="content__list">
+                <div className="content__list">
                     <ul>
                         <li>롯데헬스케어 <span>(2022.08 ~ 2023.01)</span></li>
                         <li>준차트 <span>(2022.07 ~ 2022.12)</span></li>

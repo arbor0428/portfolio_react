@@ -1,0 +1,50 @@
+.topBtn {
+    position: fixed;
+    bottom: 10%;
+    right: 75px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffa62b;
+    z-index: 99;
+    animation: upward 1s infinite linear alternate;
+    cursor: pointer;
+
+    @keyframes upward {
+
+        0% {
+            bottom: 10%;
+        }
+
+        100% {
+            bottom: 11.5%;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        bottom: 5%;
+        right: 5%;
+
+        @keyframes upward {
+
+            0% {
+                bottom: 5%;
+            }
+
+            100% {
+                bottom: 6.5%;
+            }
+
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 35px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
