@@ -76,7 +76,7 @@ export const siteText = [
         view: "http://myselfstock.com/",
     },
     {
-        code: "#",
+        code: "https://github.com/arbor0428/healthcare_eventpage",
         text: ["#HTML5", "#CSS3", "#RESPONSIVE", "#JQUERY", "#PHP"],
         img: site01,
         title: "롯데헬스케어",
