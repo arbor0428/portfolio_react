@@ -16,19 +16,34 @@ import site14 from "../assets/img/homepage14.png";
 
 export const siteText = [
     {
-        code: "#",
-        text: ["#HTML5", "#CSS3", "#RESPONSIVE", "#JQUERY", "#PHP"],
-        img: site01,
-        title: "롯데헬스케어",
-        detail01:"롯데헬스케어의 신사업 소개 및 해외 전시회 관련 8개의 캐즐몬 유형 검사 페이지 입니다.",
-        detail02:"HTML5의 '미디어 쿼리'를 이용하여 디바이스 환경에 맞춰서 만든 반응형 국문/ 영문 홈페이지이며 자바스크립트 제이쿼리와 GSAP 및 SWIPER 플러그인들을 활용하여 메뉴, 슬라이드, 탭, 동영상, 마우스오버, animation 등 동적인 효과를 주었습니다.",
+        code: "https://github.com/arbor0428/class_video_shop",
+        text: ["#HTML5", "#CSS3", "#JQUERY", "#PHP"],
+        img: site04,
+        title: "에듀핌",
+        detail01:"강사들을 교육하는 동영상 강의 홈페이지 입니다.",
+        detail02:"웹 표준 지침서를 준수하여 코딩한 웹표준 사이트이며 자바스크립트 제이쿼리를 활용하여 동적인 효과를 주었습니다.",
         info: [
-            "2022.08 ~ 2023.01",
-            "백엔드 개발자 1명, 디자이너 1명, 퍼블리셔 1명",
-            "퍼블리싱 100%",
-            "메인, 회사 소개, 제품 소개, 캐즐몬 8개 상세페이지, 뉴스룸 반응형 퍼블리싱 및 동적 효과 구현"
+            "2022.09 ~ 2023.01",
+            "백엔드 개발자 1명, 디자이너 1명, 퍼블리셔 2명",
+            "퍼블리싱작업 70%",
+            "나의 강의실, 마이 페이지, 메인페이지 반응형 퍼블리싱 및 동적 효과 구현"
         ],
-        view: "https://www.lottehealthcare.com/kr/main",
+        view: "https://www.edupimcampus.com/",
+    },
+    {
+        code: "https://github.com/arbor0428/video_effect_site",
+        text: ["#HTML5", "#CSS3", "#JQUERY", "#RESPONSIVE", "#FULLPAGE"],
+        img: site05,
+        title: "크로브",
+        detail01:"동영상 제어 및 다양한 모션을 더한 홈페이지 입니다.",
+        detail02:"fullpage 플러그인을 활용하고 자바스크립트 제이쿼리를 활용해서 동영상 제어 및 화려한 동적 효과를 구현한 반응형 홈페이지 입니다.",
+        info: [
+            "2022.06 ~ 2022.09",
+            "백엔드 개발자 1명, 디자이너 1명, 프론트엔드 1명",
+            "프론트단 작업 100%",
+            "메인, 서브 전체 페이지 반응형 퍼블리싱 및 동적 효과 구현"
+        ],
+        view: "http://www.crob.co.kr/",
     },
     {
         code: "https://github.com/arbor0428/hospital_chart",
@@ -61,34 +76,19 @@ export const siteText = [
         view: "http://myselfstock.com/",
     },
     {
-        code: "https://github.com/arbor0428/class_video_shop",
-        text: ["#HTML5", "#CSS3", "#JQUERY", "#PHP"],
-        img: site04,
-        title: "에듀핌",
-        detail01:"강사들을 교육하는 동영상 강의 홈페이지 입니다.",
-        detail02:"웹 표준 지침서를 준수하여 코딩한 웹표준 사이트이며 자바스크립트 제이쿼리를 활용하여 동적인 효과를 주었습니다.",
+        code: "#",
+        text: ["#HTML5", "#CSS3", "#RESPONSIVE", "#JQUERY", "#PHP"],
+        img: site01,
+        title: "롯데헬스케어",
+        detail01:"롯데헬스케어의 신사업 소개 및 해외 전시회 관련 8개의 캐즐몬 유형 검사 페이지 입니다.",
+        detail02:"HTML5의 '미디어 쿼리'를 이용하여 디바이스 환경에 맞춰서 만든 반응형 국문/ 영문 홈페이지이며 자바스크립트 제이쿼리와 GSAP 및 SWIPER 플러그인들을 활용하여 메뉴, 슬라이드, 탭, 동영상, 마우스오버, animation 등 동적인 효과를 주었습니다.",
         info: [
-            "2022.09 ~ 2023.01",
-            "백엔드 개발자 1명, 디자이너 1명, 퍼블리셔 2명",
-            "퍼블리싱작업 70%",
-            "나의 강의실, 마이 페이지, 메인페이지 반응형 퍼블리싱 및 동적 효과 구현"
+            "2022.08 ~ 2023.01",
+            "백엔드 개발자 1명, 디자이너 1명, 퍼블리셔 1명",
+            "퍼블리싱 100%",
+            "메인, 회사 소개, 제품 소개, 캐즐몬 8개 상세페이지, 뉴스룸 반응형 퍼블리싱 및 동적 효과 구현"
         ],
-        view: "https://www.edupimcampus.com/",
-    },
-    {
-        code: "https://github.com/arbor0428/video_effect_site",
-        text: ["#HTML5", "#CSS3", "#JQUERY", "#RESPONSIVE", "#FULLPAGE"],
-        img: site05,
-        title: "크로브",
-        detail01:"동영상 제어 및 다양한 모션을 더한 홈페이지 입니다.",
-        detail02:"fullpage 플러그인을 활용하고 자바스크립트 제이쿼리를 활용해서 동영상 제어 및 화려한 동적 효과를 구현한 반응형 홈페이지 입니다.",
-        info: [
-            "2022.06 ~ 2022.09",
-            "백엔드 개발자 1명, 디자이너 1명, 프론트엔드 1명",
-            "프론트단 작업 100%",
-            "메인, 서브 전체 페이지 반응형 퍼블리싱 및 동적 효과 구현"
-        ],
-        view: "http://www.crob.co.kr/",
+        view: "https://www.lottehealthcare.com/kr/main",
     },
     {
         code: "https://github.com/arbor0428/usim_site",
