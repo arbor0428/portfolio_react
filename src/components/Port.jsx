@@ -87,7 +87,7 @@ const Port = () => {
                                 <h4 className="right__tit">경력사항<span>Working Exp.</span></h4>
                                 <div className="infobox__bot">
                                     <ul className="title">
-                                        <li>2021.10 ~ 2023.04</li>
+                                        <li>2021.10 ~ 2023.05</li>
                                     </ul>
                                     <ul className="content">
                                         <li>(주)아이웹 - 개발 1팀</li>
