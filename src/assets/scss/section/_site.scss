@@ -57,6 +57,7 @@
             text-align: center;
             font-size: 60px;
             font-weight: 800;
+            color: var(--navy);
 
             @media (max-width: 1024px) {
                 margin-bottom: 30px;
@@ -101,6 +102,7 @@
                     align-items: center;
                     margin-bottom: 60px;
                     font-size: 18px;
+                    color: var(--black);
 
                     @media (max-width: 600px) {
                         margin-bottom: 30px;
@@ -119,8 +121,8 @@
 
                     span {
                         margin-left: 5px;
-                        color: #979797;
                         font-size: 16px;
+                        color: #979797;
 
                         @media (max-width: 600px) {
                             font-size: 14px;
@@ -156,8 +158,11 @@
 
             .site__item {
                 display: flex;
-                margin: 0 60px;
+                margin: 0 30px;
+                padding: 25px 0;
                 width: 1320px;
+                background-color: #cbdaff;
+                border-radius: 20px;
 
                 @media (max-width: 1024px) {
                     position: static;
@@ -166,13 +171,20 @@
                 }
 
                 @media (max-width: 960px) {
-                    margin: 50px 0;
+                    margin: 15px 1%;
                     display: block;
+                    border-radius: 10px;
+                }
+
+                @media (max-width: 600px) {
+                    margin: 0;
+                    border-radius: 0;
+                    padding: 30px 0;
                 }
 
                 .image {
                     position: relative;
-                    top: 10px;
+                    margin-left: 25px;
                     width: 589px;
                     height: 580px;
                     transition: all 0.3s;
@@ -195,10 +207,6 @@
 
                     @media (max-width: 600px) {
                         width: 100%;
-                    }
-
-                    &:hover {
-                        top: -10px;
                     }
 
                     .hoverbx {
@@ -249,7 +257,7 @@
                             display: inline-block;
                             margin: 0 2px;
                             padding: 12px 14px;
-                            border: 1px solid #555;
+                            border: 1px solid var(--navy);
                             color: var(--black);
                             font-weight: 500;
                             font-size: 15px;
@@ -266,9 +274,7 @@
                         }
                     }
 
-                    .lang2,
-                    .lang4,
-                    .lang7 {
+                    .lang4 {
                         span:last-child {
                             margin: 0;
                             padding: 0;
@@ -282,21 +288,26 @@
                 }
 
                 .textbox {
-                    margin: 33px 0 0 70px;
+                    margin: 40px 0 0 70px;
                     font-size: 16px;
 
                     @media (max-width: 1325px) {
-                        margin: 33px 0 0 18px;
+                        margin: 40px 0 0 18px;
                     }
 
                     @media (max-width: 1024px) {
-                        margin: 33px 15px 0 15px;
+                        margin: 40px 15px 0 15px;
                         width: calc(60% - 30px);
                     }
 
                     @media (max-width: 960px) {
                         width: 90%;
                         margin: 100px auto 0;
+                    }
+
+                    @media (max-width: 600px) {
+                        width: 90%;
+                        margin: 60px auto 0;
                     }
 
                     h4 {
@@ -323,7 +334,7 @@
                             left: -12px;
                             width: 12px;
                             height: 12px;
-                            background-color: #555;
+                            background-color: var(--navy);
                             animation: blinks 0.5s infinite linear alternate;
 
                             @media (max-width: 960px) {
@@ -344,7 +355,6 @@
 
                     .about-d {
                         margin-bottom: 35px;
-                        color: #555;
 
                         @media (max-width: 600px) {
                             margin-bottom: 20px;
@@ -355,7 +365,6 @@
                     .about-d2 {
                         width: 525px;
                         line-height: 27px;
-                        color: #555;
 
                         @media (max-width: 960px) {
                             width: 100%;
@@ -367,7 +376,7 @@
                             margin: 20px 0 20px 0;
                             width: 20px;
                             height: 3px;
-                            background-color: #555;
+                            background-color: var(--navy);
 
                             @media (max-width: 960px) {
                                 margin: 30px auto 0;
@@ -384,7 +393,7 @@
                             margin-bottom: 20px;
                             width: 20px;
                             height: 3px;
-                            background-color: #555;
+                            background-color: var(--navy);
 
                             @media (max-width: 960px) {
                                 margin: 0 auto 30px;
@@ -400,6 +409,7 @@
                         display: flex;
                         align-items: center;
                         margin: 15px 0;
+                        color: var(--black);
 
                         @media (max-width: 1024px) {
                             align-items: flex-start;
@@ -408,7 +418,6 @@
                         .firstline {
                             width: 12%;
                             font-weight: 600;
-                            color: var(--black);
 
                             @media (max-width: 1024px) {
                                 width: 13%;
@@ -423,7 +432,6 @@
                         .secondline {
                             width: 88%;
                             margin-left: 36px;
-                            color: #555;
                             line-height: 1.5;
 
                             @media (max-width: 1024px) {
@@ -447,7 +455,7 @@
 
                         .visit {
                             display: block;
-                            margin: 30px 0 70px 0;
+                            margin: 30px 0 0 0;
                             background-color: var(--navy);
                             color: var(--white);
                             width: 180px;
@@ -462,6 +470,11 @@
                             @media (max-width: 960px) {
                                 margin: 30px 10px 70px;
                             }
+
+                            @media (max-width: 600px) {
+                                margin: 30px 10px 0;
+                            }
+
 
                             &:nth-child(2) {
                                 margin: 30px 0 70px 10px;
@@ -480,6 +493,10 @@
                 }
 
 
+            }
+
+            .site__item:nth-child(2n) {
+                background-color: #bbddff;
             }
 
         }

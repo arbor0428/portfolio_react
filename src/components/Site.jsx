@@ -58,16 +58,14 @@ const Site = () => {
                         <li>에듀핌 <span>(2022.09 ~ 2023.01)</span></li>
                         <li>크로브 <span>(2022.06 ~ 2022.09)</span></li>
                         <li>한패스모바일 <span>(2022.09 ~ 2023.01)</span></li>
-                        <li>세이펜 <span>(2022.06 ~ 2022.11)</span></li>
                     </ul>
                     <ul>
+                        <li>세이펜 <span>(2022.06 ~ 2022.11)</span></li>
                         <li>은평문화재단 <span>(2022.06 ~ 2023.01)</span></li>
                         <li>광운대산학협력단 <span>(2022.09 ~ 2022.11)</span></li>
                         <li>해외지식가이드북 <span>(2022.10 ~ 2022.12)</span></li>
                         <li>스타일 세븐 <span>(2022.01 ~ 2022.03)</span></li>
                         <li>흥국산업 <span>(2022.03 ~ 2022.04)</span></li>
-                        <li>피데스에셋 <span>(2022.04 ~ 2022.05)</span></li>
-                        <li>목양비젼 지역아동센터 <span>(2021.10 ~ 2021.11)</span></li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +82,7 @@ const Site = () => {
                                     <div className="hoverbx">
                                         <p>코드보기</p>
                                     </div>  
-                                    <div className={`lang lang${key+1}`}>
+                                    <div className={`lang lang${site.num+1}`}>
                                         <span>{site.text[0]}</span>
                                         <span>{site.text[1]}</span>
                                         <span>{site.text[2]}</span>

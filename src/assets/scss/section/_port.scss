@@ -1,7 +1,7 @@
 #port {
     position: relative;
     padding-bottom: 100px;
-    background-color: #061028;
+    background-color: var(--navy);
     color: #fff;
 
     .ocean__wrap {
@@ -29,7 +29,7 @@
     }
 
     .port__inner {
-        width: 84%;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 108px;
 

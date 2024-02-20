@@ -10,12 +10,13 @@ import site09 from "../assets/img/homepage09.png";
 import site10 from "../assets/img/homepage10.png";
 import site11 from "../assets/img/homepage11.png";
 import site12 from "../assets/img/homepage12.png";
-import site13 from "../assets/img/homepage13.png";
-import site14 from "../assets/img/homepage14.png";
+//import site13 from "../assets/img/homepage13.png";
+//import site14 from "../assets/img/homepage14.png";
 
 
 export const siteText = [
     {
+        num: 3,
         code: "https://github.com/arbor0428/class_video_shop",
         text: ["#HTML5", "#CSS3", "#JQUERY", "#PHP"],
         img: site04,
@@ -46,6 +47,7 @@ export const siteText = [
         view: "http://www.crob.co.kr/",
     },
     {
+        num: 3,
         code: "https://github.com/arbor0428/hospital_chart",
         text: ["#HTML5", "#CSS3", "#JQUERY", "#PHP"],
         img: site02,
@@ -106,6 +108,7 @@ export const siteText = [
         view: "https://www.hanpassmobile.co.kr/",
     },
     {
+        num: 3,
         code: "https://github.com/arbor0428/child_education",
         text: ["#HTML5", "#CSS3", "#JQUERY", "#RESPONSIVE"],
         img: site07,
@@ -118,7 +121,7 @@ export const siteText = [
             "퍼블리셔 작업 100%",
             "메인, 서브 전체 페이지 반응형 퍼블리싱 및 동적 효과 구현"
         ],
-        view: "https://arbor0428.github.io/child_education/checkList.html",
+        view: "https://www.saypen.com/",
     },
     {
         code: "https://www.efac.or.kr/",
@@ -194,80 +197,35 @@ export const siteText = [
             "영문, 국문, 메인, 서브 전체 페이지 반응형 퍼블리싱 및 동적 효과 구현"
         ],
         view: "http://hkone.co.kr/",
-    },
-    {
-        code: "https://github.com/arbor0428/fidesasset",
-        text: ["#HTML5", "#CSS3", "#JQUERY", "#RESPONSIVE", "#PHP"],
-        img: site13,
-        title: "피데스에셋",
-        detail01:"부동산업종 홈페이지 입니다.",
-        detail02:"디바이스 환경에 맞춘 반응형 홈페이지입니다. 웹 표준 지침서를 준수하여 코딩한 웹표준 사이트이며 자바스크립트 제이쿼리를 활용하여 동적인 효과를 주었습니다. 또한 php언어를 활용하여 게시판 페이지를 연결하였습니다.",
-        info: [
-            "2022.04 ~ 2022.05",
-            "백엔드 개발자 1명, 디자이너 1명, 퍼블리셔 1명",
-            "퍼블리싱작업 100%",
-            "메인, 서브 전체 페이지 반응형 퍼블리싱 및 동적 효과 구현"
-        ],
-        view: "http://fidesasset.com/",
-    },
-    {
-        code: "https://github.com/arbor0428/mokyang",
-        text: ["#HTML5", "#CSS3", "#JQUERY", "#RESPONSIVE", "#PHP"],
-        img: site14,
-        title: "목양비젼 지역아동센터",
-        detail01:"지역아동센터 홈페이지 입니다.",
-        detail02:"디바이스 환경에 맞춰서 구현한 반응형 홈페이지입니다. 웹 표준 지침서를 준수하여 코딩한 웹표준 사이트이며 자바스크립트 제이쿼리를 활용하여 동적인 효과를 주었습니다. ",
-        info: [
-            "2021.10 ~ 2021.11",
-            "백엔드 개발자 1명, 디자이너 1명, 퍼블리셔 2명",
-            "퍼블리싱작업 50%",
-            "메인페이지 반응형 퍼블리싱 및 동적 효과 구현"
-        ],
-        view: "https://www.togethertoo.co.kr/",
-    },
+    }
+    
 ];
 
 
 
 export const practiceText = [
     {
-        title: "리액트를 이용한 사이트 제작",
+        title: "리액트를 이용한 기본 css 연습",
         code: "https://github.com/arbor0428/react_clone01",
         view: "https://gilded-capybara-02bdcb.netlify.app/",
-        info: [
-            "site coding",
-            "production period : 7 days",
-            "use stack : use stack : html5/css3, CSS Variable, react.js",
-        ],
+        info: "이 프로젝트는 React.js를 사용하여 사이트를 번들링하고 관리합니다. 또한 AOS 라이브러리를 활용하여 스크롤 효과를 부여했습니다. useState와 useEffect를 사용하여 헤더 효과 이벤트 처리 및 기본 form 데이터 푸시 작업을 처리합니다. 사이트는 Netlify를 통해 배포되며, Git을 사용하여 파일을 관리합니다. HTML 및 CSS를 기반으로 웹사이트의 기본 레이아웃을 설계하고, 웹 표준 및 웹 접근성을 준수하여 작업되었습니다. ARIA(Accessible Rich Internet Applications)를 이용하여 웹 접근성을 향상시켰습니다.",
     },
     {
-        title: "리액트를 이용한 투두리스트",
+        title: "투두리스트",
         code: "https://github.com/arbor0428/todo-list",
         view: "https://sage-belekoy-3f0d37.netlify.app/",
-        info: [
-            "site coding",
-            "production period : 14 days",
-            "use stack : html5/css3, CSS Variable, react.js",
-        ],
+        info: "이 프로젝트는 React를 사용하여 구현되며 다양한 기능을 제공합니다. 사용자는 datepicker를 통해 날짜를 선택하고 변경할 수 있습니다. 또한 useRef와 useState hook를 활용하여 사용자 이름을 입력하고 변경할 수 있습니다. 타이머 기능은 useState hook를 사용하여 시작, 정지, 리셋 기능이 포함된 타이머를 구현하고, 전체 아이템을 배열로 처리하여 표시합니다. 아이템 추가 및 삭제 또한 useState hook를 활용하여 가능하며, 아이템의 상태를 변경하여 완료된 항목을 표시할 수 있습니다. 또한, useState hook와 useEffect hook을 사용하여 특정 기준에 따라 할 일 항목을 필터링하여 보여줄 수 있습니다. 이 프로젝트는 다크 모드를 지원하며, useState, useEffect hook과 tailwindcss, createContext()를 활용하여 구현됩니다. 마지막으로, useState와 useEffect를 사용하여 사용자 이름과 할 일 목록을 로컬 스토리지에 저장하여 이전 상태를 유지할 수 있습니다.",
     },
     {
-        title: "youtube API를 활용한 프로젝트",
+        title: "유튜브 어플리케이션",
         code: "https://github.com/arbor0428/react_youtube",
         view: "https://master--flourishing-lebkuchen-fcb261.netlify.app/",
-        info: [
-            "site coding",
-            "production period : 20 days",
-            "use stack : html5/css3, CSS Variable, react.js",
-        ],
+        info: "이 프로젝트는 React를 사용하여 구현되며, react-router-dom의 useNavigate와 useParams를 활용하여 검색 헤더를 구현합니다. 사용자는 검색할 수 있는 form을 제공받게 됩니다. 비디오 카드는 useQuery와 axios를 사용하여 mock 데이터인 json 또는 실제 네트워크 통신을 통한 api 데이터를 스위칭하여 보여줄 수 있습니다. 이를 위해 .env 파일을 만들고 네트워크 관련된 secret key들을 관리합니다. 또한, 사용자는 상세 페이지로 이동하여 해당 비디오의 데이터를 확인할 수 있습니다. navigate를 사용하여 video 객체를 전달받고 해당 id로 이동하여 해당 비디오의 데이터를 보여줍니다. 또한, 해당 비디오의 id를 받아와서 연관된 비디오들을 보여줍니다.",
     },
     {
-        title: "리액트를 이용한 쇼핑몰 제작",
+        title: "쇼핑몰 프로젝트",
         code: "https://github.com/arbor0428/shoppy",
         view: "https://resilient-selkie-38c036.netlify.app/",
-        info: [
-            "site coding",
-            "production period : 25 days",
-            "use stack : html5/css3, CSS Variable, react.js",
-        ],
+        info: "이 프로젝트는 React를 사용하여 구현되며, react-router-dom의 link 태그를 활용하여 해당 페이지로 이동할 수 있도록 헤더를 설정합니다. Router를 설정할 때 한 단계 component로 감싸고 context를 만들어서 로그인 상태와 권한에 따라 경로를 보호합니다. 로그인 및 로그아웃 기능은 useState hook과 firebase를 활용하여 googleAuthProvider를 가져와 구현됩니다. useEffect hook과 onAuthStateChanged 함수를 사용하여 refresh 후에도 로그인/로그아웃 상태를 유지하며, firebase 데이터에 어드민 사용자 uid를 추가하여 제품 등록 권한을 제공합니다. 제품 등록 기능은 useState hook과 firebase, cloudinary를 사용하여 어드민 권한을 가진 사용자가 입력폼을 통해 제품을 등록할 수 있습니다. 각 제품당 여러 장의 사진을 등록할 수 있습니다. 제품 필터링은 router를 사용하여 필터링된 제품들만 보여지는 페이지로 이동하며, 제품 상세페이지는 router를 사용하여 해당 제품의 상세페이지로 경로를 이동할 수 있습니다. react-query를 사용하여 등록된 제품들을 보여주고, useState를 활용하여 선택된 옵션을 보여줍니다. 장바구니 기능은 context를 사용하여 user의 uid를 받아오고 firebase에 제품을 추가, 삭제 및 읽어올 수 있으며, useQuery를 사용하여 장바구니 안에 있는 갯수를 표시합니다.",
     },
 ];
