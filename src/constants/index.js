@@ -205,27 +205,56 @@ export const siteText = [
 
 export const practiceText = [
     {
-        title: "리액트를 이용한 기본 css 연습",
+        num:'01',
+        title: "기본 레이아웃 연습",
         code: "https://github.com/arbor0428/react_clone01",
         view: "https://gilded-capybara-02bdcb.netlify.app/",
-        info: "이 프로젝트는 React.js를 사용하여 사이트를 번들링하고 관리합니다. 또한 AOS 라이브러리를 활용하여 스크롤 효과를 부여했습니다. useState와 useEffect를 사용하여 헤더 효과 이벤트 처리 및 기본 form 데이터 푸시 작업을 처리합니다. 사이트는 Netlify를 통해 배포되며, Git을 사용하여 파일을 관리합니다. HTML 및 CSS를 기반으로 웹사이트의 기본 레이아웃을 설계하고, 웹 표준 및 웹 접근성을 준수하여 작업되었습니다. ARIA(Accessible Rich Internet Applications)를 이용하여 웹 접근성을 향상시켰습니다.",
+        info: [
+            "react.js(https://react.dev/) 를 사용하여 사이트를 번들링하고 관리.",
+            "AOS(https://michalsnik.github.io/aos/) 를 이용하여 스크롤 효과 적용.",
+            "Hook(useState와 useEffect)를 활용해서 header 효과 이벤트 처리와 기본 form 데이터 push 작업까지 처리.",
+            "netlify(https://www.netlify.com/) 를 통해 사이트 배포.",
+            "git(https://github.com/) 을 사용하여 파일을 관리.",
+        ],
     },
     {
+        num:'02',
         title: "투두리스트",
         code: "https://github.com/arbor0428/todo-list",
         view: "https://sage-belekoy-3f0d37.netlify.app/",
-        info: "이 프로젝트는 React를 사용하여 구현되며 다양한 기능을 제공합니다. 사용자는 datepicker를 통해 날짜를 선택하고 변경할 수 있습니다. 또한 useRef와 useState hook를 활용하여 사용자 이름을 입력하고 변경할 수 있습니다. 타이머 기능은 useState hook를 사용하여 시작, 정지, 리셋 기능이 포함된 타이머를 구현하고, 전체 아이템을 배열로 처리하여 표시합니다. 아이템 추가 및 삭제 또한 useState hook를 활용하여 가능하며, 아이템의 상태를 변경하여 완료된 항목을 표시할 수 있습니다. 또한, useState hook와 useEffect hook을 사용하여 특정 기준에 따라 할 일 항목을 필터링하여 보여줄 수 있습니다. 이 프로젝트는 다크 모드를 지원하며, useState, useEffect hook과 tailwindcss, createContext()를 활용하여 구현됩니다. 마지막으로, useState와 useEffect를 사용하여 사용자 이름과 할 일 목록을 로컬 스토리지에 저장하여 이전 상태를 유지할 수 있습니다.",
+        info:  [
+            "datepicker를 활용한 날짜 선택/변경.",
+            "useRef와 useState로 사용자 이름 입력/변경.",
+            "useState를 활용한 시작/정지/리셋 기능을 갖춘 타이머 구현.",
+            "useState를 활용한 할 일 항목 추가/삭제 및 필터링 처리.",
+            "tailwindcss, createContext()를 활용한 다크 모드 구현.",
+            "useState, useEffect를 활용하여 이전 상태를 유지할 수 있는 로컬 스토리지 저장 기능 구현."
+        ],
     },
     {
+        num:'03',
         title: "유튜브 어플리케이션",
         code: "https://github.com/arbor0428/react_youtube",
         view: "https://master--flourishing-lebkuchen-fcb261.netlify.app/",
-        info: "이 프로젝트는 React를 사용하여 구현되며, react-router-dom의 useNavigate와 useParams를 활용하여 검색 헤더를 구현합니다. 사용자는 검색할 수 있는 form을 제공받게 됩니다. 비디오 카드는 useQuery와 axios를 사용하여 mock 데이터인 json 또는 실제 네트워크 통신을 통한 api 데이터를 스위칭하여 보여줄 수 있습니다. 이를 위해 .env 파일을 만들고 네트워크 관련된 secret key들을 관리합니다. 또한, 사용자는 상세 페이지로 이동하여 해당 비디오의 데이터를 확인할 수 있습니다. navigate를 사용하여 video 객체를 전달받고 해당 id로 이동하여 해당 비디오의 데이터를 보여줍니다. 또한, 해당 비디오의 id를 받아와서 연관된 비디오들을 보여줍니다.",
+        info:  [
+            "react-router-dom의 useNavigate, useParams를 이용한 검색 form 구현.",
+            "seQuery, axios, context를 활용하여 mock 데이터 또는 API 데이터 스위칭",
+            ".env 파일을 활용한 네트워크 관련 secret key 관리",
+            "navigate를 활용하여 video 객체 전달 및 해당 id로 이동하여 데이터 표시, 관련 비디오들 표시.",
+        ],
     },
     {
+        num:'04',
         title: "쇼핑몰 프로젝트",
         code: "https://github.com/arbor0428/shoppy",
         view: "https://resilient-selkie-38c036.netlify.app/",
-        info: "이 프로젝트는 React를 사용하여 구현되며, react-router-dom의 link 태그를 활용하여 해당 페이지로 이동할 수 있도록 헤더를 설정합니다. Router를 설정할 때 한 단계 component로 감싸고 context를 만들어서 로그인 상태와 권한에 따라 경로를 보호합니다. 로그인 및 로그아웃 기능은 useState hook과 firebase를 활용하여 googleAuthProvider를 가져와 구현됩니다. useEffect hook과 onAuthStateChanged 함수를 사용하여 refresh 후에도 로그인/로그아웃 상태를 유지하며, firebase 데이터에 어드민 사용자 uid를 추가하여 제품 등록 권한을 제공합니다. 제품 등록 기능은 useState hook과 firebase, cloudinary를 사용하여 어드민 권한을 가진 사용자가 입력폼을 통해 제품을 등록할 수 있습니다. 각 제품당 여러 장의 사진을 등록할 수 있습니다. 제품 필터링은 router를 사용하여 필터링된 제품들만 보여지는 페이지로 이동하며, 제품 상세페이지는 router를 사용하여 해당 제품의 상세페이지로 경로를 이동할 수 있습니다. react-query를 사용하여 등록된 제품들을 보여주고, useState를 활용하여 선택된 옵션을 보여줍니다. 장바구니 기능은 context를 사용하여 user의 uid를 받아오고 firebase에 제품을 추가, 삭제 및 읽어올 수 있으며, useQuery를 사용하여 장바구니 안에 있는 갯수를 표시합니다.",
+        info:  [
+            "react-router-dom의 link태그를 이용하여 페이지 이동 처리 및 보호된 경로 설정.",
+            "useState hook과 firebase를 활용한 로그인/로그아웃 기능 구현 및 데이터베이스 관리.",
+            "어드민 권한을 가진 사용자를 위한 제품 등록 기능 구현.",
+            "router를 활용하여 필터링된 제품들만 표시하는 페이지로 이동.",
+            "router를 사용하여 제품의 상세페이지로 이동 및 react-query를 통한 데이터 표시.",
+            "장바구니 기능 구현을 위해 context와 firebase를 활용하여 제품 추가, 삭제 및 조회 기능 구현."
+        ],
     },
 ];

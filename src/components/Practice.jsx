@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { practiceText } from "../constants";
+import { IoClose } from "react-icons/io5";
 
 function Practice() {
     const [isOpen, setIsOpen] = useState(Array(practiceText.length).fill(false));
@@ -53,19 +54,32 @@ function Practice() {
                         <article className={`site__item ${isOpen[index] ? 'move' : ''}`} key={index}>
                             <div className="site__item__bg"></div>
                             <div className="open" onClick={() => handleOpenClick(index)}>
-                                <p className={`first ${isOpen[index] ? 'fadeOut' : ''}`}>{practice.title}</p>
+                                <p className={`first ${isOpen[index] ? 'fadeOut' : ''}`}>PRACTICE {practice.num}</p>
+                                <p className={`second ${isOpen[index] ? 'fadeOut' : ''}`}>{practice.title}</p>
                                 <span className={`wider ${isOpen[index] ? 'fadeOut' : ''}`}>펼쳐보기</span>
                             </div>
-                            <div className={`intro__box ${isOpen[index] ? 'open' : ''}`} style={{ height: isOpen[index] ? '465px' : '0', transition: isOpen[index] ? 'all 1.5s 2s' : 'all 0s 0s' }}>
+                            <div className={`intro__box ${isOpen[index] ? 'open' : ''}`}>
                                 <button className="close" onClick={() => handleCloseClick(index)}>
-                                    x
+                                    <IoClose />
                                 </button>
-                                <p className="title">{practice.title}</p>
+                                <p className="title">PRACTICE {practice.num} WEBSITE</p>
                                 <div className="box__wrap">
                                     <p className="main">{practice.title}</p>
-                                    <p className="sub">{practice.info}</p>
-                                    <a href={practice.code} target="_blank" rel="noopener noreferrer">code보러가기</a>
-                                    <a href={practice.view} target="_blank" rel="noopener noreferrer">site보러가기</a>
+                                    <ul className="sub">
+                                        {practice.info.map((item, index) => (
+                                            <li key={index}>{index+1}. {item}</li>
+                                        ))}
+                                    </ul>
+                                    <div className='botton__wrap'>
+                                        <a href={practice.code} target="_blank" rel="noopener noreferrer" className='botton__show'>
+                                            <span className='hover'>hover</span>
+                                            <span className='txt'>code보러가기</span>
+                                        </a>
+                                        <a href={practice.view} target="_blank" rel="noopener noreferrer" className='botton__show'>
+                                            <span className='hover'>hover</span>
+                                            <span className='txt'>site보러가기</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </article>

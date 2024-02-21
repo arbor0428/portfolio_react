@@ -72,14 +72,24 @@
         height: 700px;
         overflow: hidden;
 
+        @media (max-width: 980px) {
+            height: 1000px;
+        }
+
         .site__item {
             position: absolute;
             width: 25%;
             height: 100%;
-            background-position: center center;
+            background-position: top center;
             background-repeat: no-repeat;
             transition: width 1.5s, left 1.5s 0.5s, transform 1.5s 1.5s;
             z-index: 29;
+
+            @media (max-width: 980px) {
+                width: 100%;
+                height: 250px;
+                transition: height 1s 0.5s, width 1.5s, left 1.5s 0.5s, transform 1.5s 1.5s;
+            }
 
             .site__item__bg {
                 position: absolute;
@@ -87,7 +97,6 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0, 0, 0, 0.3);
             }
 
             .open {
@@ -99,13 +108,25 @@
                 color: #fff;
                 text-align: center;
 
+                @media (max-width: 980px) {
+                    width: 98%;
+                }
+
                 .first {
+                    font-size: 16px;
                     animation: fadeIn 1.5s ease forwards;
+                }
+
+                .second {
+                    margin-top: 20px;
+                    font-size: 30px;
+                    animation: fadeIn 1.5s ease forwards;
+                    font-weight: 800;
                 }
 
                 .wider {
                     display: block;
-                    margin: 25px auto;
+                    margin: 50px auto 0;
                     width: 120px;
                     height: 38px;
                     line-height: 38px;
@@ -114,10 +135,12 @@
                     font-weight: 600;
                     color: #fff;
                     transition: all 0.5s;
+                    cursor: pointer;
                     animation: fadeIn 1.5s ease forwards;
                 }
 
                 .first.fadeOut,
+                .second.fadeOut,
                 .wider.fadeOut {
                     animation: fadeOut 1.5s ease forwards;
                 }
@@ -148,28 +171,123 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
-                width: 90%;
+                width: 60%;
                 height: 0;
                 color: #fff;
                 overflow: hidden;
                 text-align: center;
+                transition: all 0s 0s;
+
+                @media (max-width: 980px) {
+                    width: 98%;
+                }
 
                 .close {
                     position: absolute;
                     display: block;
                     top: 0;
                     right: 0;
-                    width: 20px;
-                    height: 20px;
+                    width: 30px;
+                    height: 30px;
+                    background: inherit;
+                    border: none;
+                    box-shadow: none;
+                    color: var(--white);
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+
+                .title {
+                    font-weight: 600;
+                    letter-spacing: 5px;
+                    font-size: 14px;
+                    text-align: left;
                 }
 
                 .box__wrap {
                     position: absolute;
                     left: 0;
-                    top: 25px;
+                    top: 30px;
                     width: 100%;
+                    padding: 30px;
+                    box-sizing: border-box;
                     border: 1px solid #fff;
                     box-sizing: border-box;
+                    text-align: left;
+
+                    .main {
+                        margin: 0 0 35px 0;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+
+                    .sub {
+                        margin-bottom: 35px;
+                        font-size: 15px;
+
+                        li {
+                            margin-bottom: 25px;
+                        }
+
+                        @media (max-width: 980px) {
+                            display: none;
+                        }
+                    }
+
+                    .botton__wrap {
+                        display: flex;
+                        gap: 10px;
+
+                        .botton__show {
+                            position: relative;
+                            width: 130px;
+                            height: 40px;
+                            text-align: center;
+                            box-sizing: border-box;
+
+                            &:hover {
+                                border-bottom: 1px solid var(--yellow);
+
+                                .hover {
+                                    height: 0;
+                                }
+
+                                .txt {
+                                    color: var(--yellow);
+                                }
+                            }
+
+                            .hover {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-color: var(--yellow);
+                                transition: all 0.3s ease;
+                                text-indent: -9999px;
+                            }
+
+                            .txt {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                                color: var(--white);
+                                font-weight: 600;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .intro__box.open {
+                height: 465px;
+                transition: all 1.5s 2s;
+
+                @media (max-width: 980px) {
+                    height: 240px;
                 }
             }
         }
@@ -180,26 +298,68 @@
             width: 100% !important;
             transition: width 1.3s 1.5s, left 1.5s 0.5s, transform 1.5s 1s;
             z-index: 30;
+
+            @media (max-width: 980px) {
+                height: 500px;
+                transition: height 1s 1.5s, width 1.3s 1.5s, left 1.5s 0.5s, transform 1.5s 1s;
+            }
+
+            .site__item__bg {
+                background-color: rgba(0, 0, 0, 0.8) !important;
+                transition: all 1.5s 1s;
+            }
         }
 
         .site__item:nth-child(1) {
             left: 0;
-            background-color: #000;
+            background-image: url('../../img/practice01.png');
+
+            .site__item__bg {
+                background-color: #b7a498;
+            }
         }
 
         .site__item:nth-child(2) {
             left: 25%;
-            background-color: #000;
+            background-image: url('../../img/practice03.png');
+
+            @media (max-width: 980px) {
+                left: 0;
+                top: 250px;
+            }
+
+            .site__item__bg {
+                background-color: #7b8b78;
+            }
         }
 
         .site__item:nth-child(3) {
             left: 50%;
-            background-color: #000;
+            background-image: url('../../img/practice02.png');
+
+            @media (max-width: 980px) {
+                top: 500px;
+                left: 0;
+            }
+
+            .site__item__bg {
+                background-color: #6a7b8a;
+            }
         }
 
         .site__item:nth-child(4) {
             left: 75%;
-            background-color: #000;
+            background-image: url('../../img/practice04.png');
+
+            @media (max-width: 980px) {
+                top: 750px;
+                left: 0;
+            }
+
+
+            .site__item__bg {
+                background-color: #9e8e7b;
+            }
         }
     }
 }
