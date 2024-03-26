@@ -220,8 +220,8 @@ export const practiceText = [
     {
         num:'02',
         title: "투두리스트",
-        code: "https://github.com/arbor0428/todo-list",
-        view: "https://sage-belekoy-3f0d37.netlify.app/",
+        code: "https://github.com/arbor0428/typescript_todolist",
+        view: "https://tiny-salamander-d72637.netlify.app/",
         info:  [
             "datepicker를 활용한 날짜 선택/변경.",
             "useRef와 useState로 사용자 이름 입력/변경.",
