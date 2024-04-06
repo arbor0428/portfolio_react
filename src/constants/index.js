@@ -206,15 +206,13 @@ export const siteText = [
 export const practiceText = [
     {
         num:'01',
-        title: "기본 레이아웃 연습",
-        code: "https://github.com/arbor0428/react_clone01",
-        view: "https://gilded-capybara-02bdcb.netlify.app/",
+        title: "공공 데이터 api 연습",
+        code: "https://github.com/arbor0428/WeatherWithPuppy",
+        view: "https://bucolic-capybara-bfaced.netlify.app/",
         info: [
-            "react.js(https://react.dev/) 를 사용하여 사이트를 번들링하고 관리.",
-            "AOS(https://michalsnik.github.io/aos/) 를 이용하여 스크롤 효과 적용.",
-            "Hook(useState와 useEffect)를 활용해서 header 효과 이벤트 처리와 기본 form 데이터 push 작업까지 처리.",
-            "netlify(https://www.netlify.com/) 를 통해 사이트 배포.",
-            "git(https://github.com/) 을 사용하여 파일을 관리.",
+            "axios를 활용하여 API 데이터 fetching",
+            "react-router-dom의 useNavigate(), useLocation(), useParams()를 이용한 검색 form 구현.",
+            ".env 파일을 활용한 네트워크 관련 secret key 관리"
         ],
     },
     {
