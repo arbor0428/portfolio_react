@@ -166,8 +166,10 @@
 
                 @media (max-width: 1024px) {
                     position: static;
+                    margin: 15px 30px;
                     width: 100%;
                     height: auto;
+                    align-items: center;
                 }
 
                 @media (max-width: 960px) {
@@ -197,11 +199,11 @@
                     @media (max-width: 1024px) {
                         margin-left: 0;
                         width: 40%;
+                        height: auto;
                     }
 
                     @media (max-width: 960px) {
                         width: 90%;
-                        height: auto;
                         margin: 0 auto;
                     }
 
@@ -227,9 +229,6 @@
                         @media (max-width: 1024px) {
                             left: 50%;
                             transform: translateX(-50%);
-                        }
-
-                        @media (max-width: 600px) {
                             bottom: -56%;
                         }
 
@@ -238,7 +237,7 @@
                     &:hover .hoverbx {
                         bottom: 40%;
 
-                        @media (max-width: 600px) {
+                        @media (max-width: 1024px) {
                             bottom: 23%;
                         }
                     }

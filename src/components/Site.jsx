@@ -15,7 +15,7 @@ const Site = () => {
         // 페이지 로딩이 완료된 후에 스크롤을 상단으로 이동시킵니다.
         //window.scrollTo(0, 0);
     
-        if (window.innerWidth >= 960) {
+        if (window.innerWidth >= 1030) {
             const horizontal = horizontalRef.current;
             const sections = sectionRef.current;
     
